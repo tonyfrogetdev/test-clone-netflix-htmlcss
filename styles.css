@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 504px;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(0.5);
+  background-image: url(/images/header-image.png);
+}
+header nav img {
+  width: 89px;
+  height: 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.nav-container select {
+  background-color: transparent;
+  color: white;
+  border: 0.5px solid grey;
+}
+.nav-container select:active {
+  border: 1px solid white;
+}
+
+header nav button {
+  width: 103.14px;
+  height: 32px;
+  background-color: rgb(224, 4, 4);
+  color: white;
+  border: 1px solid rgb(224, 4, 4);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.hero-container {
+  margin: auto;
+  max-width: 90%;
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+.hero-container h1 {
+  margin-top: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero-container p {
+  margin: 1rem 0 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.hero-container input {
+  width: 334px;
+  height: 48px;
+  background-color: transparent;
+  font-size: 1.15rem;
+  border-radius: 5%;
+  padding-left: 15px;
+}
+
+.hero-container input::placeholder {
+  color: lightgray;
+}
+
+.hero-container button {
+  width: 166.25px;
+  height: 48px;
+  background-color: rgb(224, 4, 4);
+  color: white;
+  border: 0.0625rem solid rgb(224, 4, 4);
+  border-radius: 0.1875rem;
+  cursor: pointer;
+  font-weight: 750;
+  font-size: 1.15rem;
+}
+
+.hero-container button span {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.hero-container .input-button {
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 10px;
+}
+/* main content */
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+
+.popcorn-box {
+  background: radial-gradient(
+    120.35% 220% at 49.86% -6.29%,
+    #e50914 0%,
+    #0e1b4f 46.15%,
+    #0d1121 100%
+  );
+  width: 90%;
+  height: 200px;
+  border-radius: 5px;
+
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.popcorn-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 25px;
+  line-height: 30px;
+}
+.popcorn-text a {
+  color: #448ef4;
+  font-weight: 600;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section img {
+  width: 90%;
+}
+.content-1 {
+  text-align: center;
+  margin: 50px 0 40px;
+  font-size: 1.3rem;
+}
+
+.content-2 {
+  text-align: center;
+  margin: 50px 0 40px;
+  font-size: 1.3rem;
+}
+
+.content-text {
+  width: 90%;
+}
+
+.separator {
+  background-color: rgb(30, 30, 30);
+  height: 8px;
+  width: 100%;
+}
+
+section.faq {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+section.faq .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.faq .container ul li {
+  background-color: rgba(45, 45, 45);
+  height: 80px;
+  cursor: pointer;
+  list-style: none;
+  overflow: hidden;
+  margin: 10px 20px 10px 20px;
+}
+
+section.faq .container ul li h3 {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.emailing {
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 25px;
+  color: white;
+}
+
+.emailing h1 {
+  margin-top: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.emailing span {
+  width: 80%;
+  margin: 1rem 0 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.emailing input {
+  width: 334px;
+  height: 48px;
+  background-color: transparent;
+  font-size: 1.15rem;
+  border-radius: 5%;
+  padding-left: 15px;
+}
+
+.emailing input::placeholder {
+  color: lightgray;
+}
+
+.emailing button {
+  width: 166.25px;
+  height: 48px;
+  background-color: rgb(224, 4, 4);
+  color: white;
+  border: 0.0625rem solid rgb(224, 4, 4);
+  border-radius: 0.1875rem;
+  cursor: pointer;
+  font-weight: 750;
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+}
+
+.emailing button span {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+footer {
+  padding-top: 30px;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .footer-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+footer p {
+  margin-left: 20px;
+}
+
+footer .footer-nav ul {
+  line-height: 35px;
+}
+
+footer .footer-nav ul li {
+  list-style: none;
+}
+
+footer .footer-nav ul li a {
+  font-size: 0.8rem;
+}
+
+footer span {
+  margin-left: 20px;
+  font-size: 0.8rem;
+}
+footer select {
+  width: 50%;
+  height: 30px;
+  background-color: transparent;
+  color: white;
+  border: 0.5px solid grey;
+  margin-top: 10px;
+}
+footer select:active {
+  border: 1px solid white;
+}
+
+/* responsive grand écran*/
+
+@media screen and (min-width: 1270px) {
+  header {
+    width: 100%;
+    height: 700px;
+    position: relative;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  header nav img {
+    width: 148px;
+    height: 40px;
+  }
+
+  .nav-container {
+    display: flex;
+    gap: 25px;
+  }
+
+  .nav-container select {
+    width: 134px;
+    height: 32px;
+    background-color: transparent;
+    color: white;
+    border: 0.5px solid grey;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .nav-container select:active {
+    border: 1px solid white;
+  }
+
+  .hero-container {
+    width: 984px;
+    height: 285px;
+    margin-top: 130px;
+  }
+
+  .hero-container h1 {
+    margin-top: 40px;
+    font-size: 2.8rem;
+    font-weight: 800;
+  }
+
+  .hero-container p {
+    margin: 1rem 0 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .hero-container p.hero-second-p {
+    font-size: 1.2rem;
+  }
+  .hero-container input {
+    width: 334px;
+    height: 48px;
+    background-color: transparent;
+    font-size: 1.15rem;
+    border-radius: 5%;
+    padding-left: 15px;
+  }
+
+  .hero-container input::placeholder {
+    color: lightgray;
+  }
+
+  .hero-container button {
+    width: 166.25px;
+    height: 48px;
+    background-color: rgb(224, 4, 4);
+    color: white;
+    border: 0.0625rem solid rgb(224, 4, 4);
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    font-weight: 750;
+    font-size: 1.15rem;
+  }
+
+  .hero-container button span {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+
+  .hero-container .input-button {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* MAIN */
+
+  .popcorn-box {
+    background: radial-gradient(
+      120.35% 220% at 49.86% -6.29%,
+      #e50914 0%,
+      #0e1b4f 46.15%,
+      #0d1121 100%
+    );
+    height: 150px;
+    position: absolute;
+    top: 610px;
+    text-align: center;
+  }
+
+  .popcorn-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 700px;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+
+  .content-1 {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    width: 1280px;
+    height: 480px;
+  }
+
+  .content-1 img {
+    width: 50%;
+  }
+  .content-text {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 40px;
+    font-size: 1.3rem;
+    width: 640px;
+    height: 234px;
+  }
+
+  .content-text h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  .content-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .content-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1280px;
+    height: 480px;
+    text-align: start;
+  }
+
+  .content-2 img {
+    width: 50%;
+  }
+
+  section.faq .container ul li h3 {
+    font-size: 1.5rem;
+  }
+
+  .emailing span {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    margin-left: 120px;
+  }
+  footer .footer-nav {
+    width: 1380px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

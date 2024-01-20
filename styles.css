@@ -19,7 +19,7 @@ header::before {
   height: 100%;
   z-index: -1;
   filter: brightness(0.5);
-  background-image: url(/images/header-image.png);
+  background-image: url(./images/header-image.png);
 }
 header nav img {
   width: 89px;
